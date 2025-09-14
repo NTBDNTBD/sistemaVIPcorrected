@@ -1,0 +1,37 @@
+========================================
+BAR VIP MANAGER - INSTRUCCIONES DE INSTALACION
+========================================
+
+REQUISITOS:
+- Windows 11 (o Windows 10)
+- Node.js 18+ (descargar de https://nodejs.org/)
+
+INSTALACION RAPIDA:
+1. Descomprime todos los archivos en una carpeta
+2. Haz doble clic en "install.bat"
+3. Espera a que termine la instalacion
+4. Haz doble clic en "start.bat"
+5. Abre tu navegador en: http://localhost:3000
+
+CREDENCIALES DE DEMO:
+Email: demo@barvip.com
+Contraseña: demo123
+
+ARCHIVOS IMPORTANTES:
+- install.bat: Instala todas las dependencias
+- start.bat: Inicia el servidor de desarrollo
+- build.bat: Construye para produccion
+- README.md: Documentacion completa
+
+SOLUCION DE PROBLEMAS:
+- Si no funciona, instala Node.js primero
+- Ejecuta como Administrador si hay errores
+- Verifica que el puerto 3000 este libre
+
+CONFIGURACION AVANZADA:
+- Para base de datos real, configura .env.local
+- Los scripts SQL estan en la carpeta scripts/
+- Personaliza colores y datos en los archivos de configuracion
+
+¡El sistema esta listo para usar en modo demo!
+========================================

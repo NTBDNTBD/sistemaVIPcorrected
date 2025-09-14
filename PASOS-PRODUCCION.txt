@@ -1,0 +1,42 @@
+🚀 PASOS RÁPIDOS PARA MODO PRODUCCIÓN
+==================================
+
+1. CREAR PROYECTO SUPABASE
+   - Ve a https://supabase.com
+   - Crea cuenta y nuevo proyecto
+   - Ve a Settings → API
+   - Copia URL y API Key
+
+2. CREAR ARCHIVO .env.local
+   - En la raíz del proyecto
+   - Agrega las variables de Supabase:
+     NEXT_PUBLIC_SUPABASE_URL=https://hzhgbdhihpqffmoefmmv.supabase.co
+     NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6aGdiZGhpaHBxZmZtb2VmbW12Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ5MzQ5MjYsImV4cCI6MjA3MDUxMDkyNn0.0yHC5dB5YAAz-RZgLYz6h03i3OsqFFqSLdoNIh7ezpw
+
+3. CREAR USUARIO EN SUPABASE AUTH
+   - En Supabase Dashboard → Authentication → Users
+   - Add user: manager@barvip.com
+   - Configura tu contraseña
+   - Email Confirm: ✅ marcado
+
+4. EJECUTAR SCRIPT SQL EN SUPABASE
+   - En Supabase Dashboard → SQL Editor
+   - Ejecuta: scripts/verify-complete-system.sql
+
+5. REINICIAR APLICACIÓN
+   - Ctrl+C para detener
+   - npm run dev para iniciar
+   - Ve a /login
+   - Usuario: manager@barvip.com
+   - Contraseña: (la que configuraste)
+
+¡LISTO! El sistema ya funciona en modo producción 🎉
+
+VERIFICAR MODO:
+- Ve a /setup para ver el estado
+- Debe decir "Modo Producción"
+- Los datos se guardan en Supabase
+
+DESPLEGAR:
+- Vercel: Conecta repo y configura variables
+- Servidor: npm run build && npm start
